@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: black;
+    color: white;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: circle 2s linear infinite;
+}
+
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+
+    25%{
+        transform: rotate(90deg);
+        box-shadow: 1px 5px 2px #5e8621;
+    }
+
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #0174b2;
+    }
+
+    75%{
+        transform: rotate(90deg);
+        box-shadow: 1px 5px 2px #57046e;
+    }
+
+    100%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #610239;
+    }
+}
+
+.center::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+
+.text {
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: text 4s ease-in-out infinite;
+}
+
+@keyframes text {
+    50%{
+        color: #000;
+    }
+}
