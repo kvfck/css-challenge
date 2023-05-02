@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #fff 0%, #d7e1ec 74%);
+}
+
+.button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    width: 200px;
+}
+
+.btn-icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    margin: 0 auto;
+    transition: all 0.3s ease-out;
+}
+
+.btn-text {
+    text-align: center;
+}
+
+.btn-icon {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .btn-icon i{
+    color: #fff;
+}
+
+.wrapper .button:hover .btn-text{
+    text-align: center;
+    margin-left: 5px;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+/* Facebook */
+.button:nth-child(1):hover .btn-icon{
+    background: #4267B2;
+}
+.button:nth-child(1) span{
+    color: #4267B2;
+}
+
+/* Twitter */
+.button:nth-child(2):hover .btn-icon{
+    background: #1DA1F2;
+}
+.button:nth-child(2) span{
+    color: #1DA1F2;
+}
+
+/* Instagram */
+.button:nth-child(3):hover .btn-icon{
+    background: #C13584;
+}
+.button:nth-child(3) span{
+    color: #C13584;
+}
+
+/* GitHub */
+.button:nth-child(4):hover .btn-icon{
+    background: #333;
+}
+.button:nth-child(4) span{
+    color: #333;
+}
+
+/* Pinterest */
+.button:nth-child(5):hover .btn-icon{
+    background: #E60023;
+}
+.button:nth-child(5) span{
+    color: #E60023;
+}
+
+/* YouTube */
+.button:nth-child(6):hover .btn-icon{
+    background: #FF0000;
+}
+.button:nth-child(6) span{
+    color: #FF0000;
+}
